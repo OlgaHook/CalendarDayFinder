@@ -56,15 +56,39 @@
 		B40161A026AFC151000BDBFB /* CalendarDayFinder */ = {
 			isa = PBXGroup;
 			children = (
-				B40161A126AFC151000BDBFB /* AppDelegate.swift */,
-				B40161A326AFC151000BDBFB /* SceneDelegate.swift */,
-				B40161A526AFC151000BDBFB /* ViewController.swift */,
-				B40161A726AFC151000BDBFB /* Main.storyboard */,
+				B40161B526AFC15D000BDBFB /* AppDelegate */,
+				B40161B626AFC168000BDBFB /* Controller */,
+				B40161B726AFC17A000BDBFB /* View */,
 				B40161AA26AFC154000BDBFB /* Assets.xcassets */,
-				B40161AC26AFC154000BDBFB /* LaunchScreen.storyboard */,
 				B40161AF26AFC154000BDBFB /* Info.plist */,
 			);
 			path = CalendarDayFinder;
+			sourceTree = "<group>";
+		};
+		B40161B526AFC15D000BDBFB /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B40161A126AFC151000BDBFB /* AppDelegate.swift */,
+				B40161A326AFC151000BDBFB /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		B40161B626AFC168000BDBFB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B40161A526AFC151000BDBFB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B40161B726AFC17A000BDBFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B40161A726AFC151000BDBFB /* Main.storyboard */,
+				B40161AC26AFC154000BDBFB /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

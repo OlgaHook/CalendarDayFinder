@@ -28,7 +28,11 @@ class ViewController: UIViewController {
         var dateComponents = DateComponents()
         
         guard let day = Int(dayTextField.text!), let month = Int(monthsTexField.text!), let year = Int(yearTextField.text!) else {
-            //If not - Allert pop up for User
+            /*If not - Allert pop up for User
+             Look for func warningPopup at aproximetely row 85. Here we only run this func.
+             
+             */
+            warningPopUp(withTitle: "Input error", withMessage: "Date Text Fields Can't be Empty.")
             return
             
         }
@@ -45,7 +49,9 @@ class ViewController: UIViewController {
         
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_EN")
-        dateFormatter.dateFormat = "EEEE" // NSDateformatter.com
+        /* We put "EEEE" format to get day of week written in one whole word NSDateformatter.com */
+        dateFormatter.dateFormat = "EEEE"
+        
         
         
         switch findButton.titleLabel?.text {
@@ -55,18 +61,42 @@ class ViewController: UIViewController {
                 let weekDay = dateFormatter.string(from: date)
                 self.resultLabel.text = weekDay.capitalized
             }else{
-                //Allert
-                
+                clearTextInFields()               //Allert pop up for User
+                warningPopUp(withTitle: "Wrong Date", withMessage: "Please, Enter the Correct Date.")
             }
         default:
             findButton.setTitle("FIND", for: .normal)
-            
-        }
-        
+            clearTextInFields()                             }
+      
     }
    
+    func clearTextInFields(){
+        dayTextField.text = ""
+        monthsTexField.text = ""
+        yearTextField.text = ""
+        resultLabel.text = "Day Of The Week Inside Your Finder"
+        
+    }
+    
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    func warningPopUp (withTitle title: String?, withMessage message: String?){
+        /* build after popUp.addAction -  need to access main Thread (???- ask later)
+         We put in "code" our popUp let,button and Action
+         Dont forget to run func "warningPopUp" in all necessary places (commented as as "Allert")
+ */
+        DispatchQueue.main.async {
+            let popUp = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            //to put our okButton inside of Allert
+            popUp.addAction(okButton)
+            self.present(popUp, animated: true, completion: nil)
+        }
+    
     }
     
 }

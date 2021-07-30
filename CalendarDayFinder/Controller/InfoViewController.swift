@@ -9,10 +9,23 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    @IBOutlet weak var appInfoLabel: UILabel!
+    @IBOutlet weak var appDescriptionLabel: UILabel!
+    
+    var infoText = ""
+    let appDescriptionText = "Enjoy Your App"
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        appDescriptionLabel.text = appDescriptionText
+        
+        if !infoText.isEmpty{
+            appInfoLabel.text = infoText
+            
+        }
+        
     }
     
 

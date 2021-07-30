@@ -10,15 +10,13 @@ import UIKit
 class AppearanceViewController: UIViewController {
     
     @IBOutlet weak var textLabel: UILabel!
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setLabelText()
+        
     }
     
-
     @IBAction func closeButtenTapped(_ sender: Any) {
         self.dismiss(animated: true
         , completion: nil)
@@ -29,6 +27,18 @@ class AppearanceViewController: UIViewController {
         
     }
     
+    
+
+     func setLabelText(){
+       var text = "Unable to specifu UI style"
+        if self.traitCollection.userInterfaceStyle == .dark{
+            text = "Dark mode is On\nGo to Settings if You would like\nto change to Light mode"
+        }else{
+            text = "Light mode is On\nGo to Settings if You would like\nto change to Dark mode"
+        }
+        textLabel.text = text
+        
+    }
     
     func openSettings() {
         guard let settingURL = URL(string: UIApplication.openSettingsURLString) else {
@@ -44,5 +54,9 @@ class AppearanceViewController: UIViewController {
     
     }
     
-    
+}
+extension AppearanceViewController{
+   override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    setLabelText()
+   }
 }

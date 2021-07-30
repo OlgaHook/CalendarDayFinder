@@ -15,6 +15,7 @@
 		B40161AE26AFC154000BDBFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B40161AC26AFC154000BDBFB /* LaunchScreen.storyboard */; };
 		B473309226B40A7600DE14DF /* AppearanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B473309126B40A7600DE14DF /* AppearanceViewController.swift */; };
 		B4C4E88C26B40DF7003998DE /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4E88B26B40DF7003998DE /* InfoViewController.swift */; };
+		B4C4E88F26B447DD003998DE /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C4E88E26B447DD003998DE /* Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B40161AF26AFC154000BDBFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B473309126B40A7600DE14DF /* AppearanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceViewController.swift; sourceTree = "<group>"; };
 		B4C4E88B26B40DF7003998DE /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B4C4E88E26B447DD003998DE /* Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		B40161A026AFC151000BDBFB /* CalendarDayFinder */ = {
 			isa = PBXGroup;
 			children = (
+				B4C4E88D26B4476E003998DE /* Extensions */,
 				B40161B526AFC15D000BDBFB /* AppDelegate */,
 				B40161B626AFC168000BDBFB /* Controller */,
 				B40161B726AFC17A000BDBFB /* View */,
@@ -95,6 +98,14 @@
 				B40161AC26AFC154000BDBFB /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B4C4E88D26B4476E003998DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4C4E88E26B447DD003998DE /* Extention.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +182,7 @@
 				B40161A626AFC151000BDBFB /* ViewController.swift in Sources */,
 				B40161A226AFC151000BDBFB /* AppDelegate.swift in Sources */,
 				B40161A426AFC151000BDBFB /* SceneDelegate.swift in Sources */,
+				B4C4E88F26B447DD003998DE /* Extention.swift in Sources */,
 				B4C4E88C26B40DF7003998DE /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

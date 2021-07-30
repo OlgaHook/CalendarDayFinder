@@ -275,14 +275,60 @@
                                     <action selector="closeButtenTapped:" destination="3ga-jd-bBJ" eventType="touchUpInside" id="2E4-GZ-Qas"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-eX-L7l">
+                                <rect key="frame" x="94.5" y="278" width="186" height="91"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light mode is On" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig9-SM-bv0">
+                                        <rect key="frame" x="0.0" y="0.0" width="186" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="Obe-6S-fXn"/>
+                                            <constraint firstAttribute="height" constant="45" id="cXG-Yx-2vU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ydo-R8-sjb">
+                                        <rect key="frame" x="0.0" y="60" width="186" height="31"/>
+                                        <color key="backgroundColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="L2e-oF-xU8"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="186" id="QnX-pd-lTg"/>
+                                        </constraints>
+                                        <state key="normal" title="Open Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="openSettingsTapped:" destination="3ga-jd-bBJ" eventType="touchUpInside" id="DH9-ew-vnM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MwQ-4d-9D6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hbk-eX-L7l" firstAttribute="centerX" secondItem="Ae0-S7-moO" secondAttribute="centerX" id="YQs-XA-Xg7"/>
+                            <constraint firstItem="Hbk-eX-L7l" firstAttribute="centerY" secondItem="Ae0-S7-moO" secondAttribute="centerY" id="aJ0-or-KXA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textLabel" destination="ig9-SM-bv0" id="qBo-E6-c9E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZd-An-8Pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1727" y="72"/>
+            <point key="canvasLocation" x="1725.5999999999999" y="71.514242878560722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GJt-aI-4Dv">

@@ -8,6 +8,9 @@
 import UIKit
 
 class AppearanceViewController: UIViewController {
+    
+    @IBOutlet weak var textLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +24,25 @@ class AppearanceViewController: UIViewController {
         , completion: nil)
     }
     
-
+    @IBAction func openSettingsTapped(_ sender: Any) {
+        openSettings()
+        
+    }
+    
+    
+    func openSettings() {
+        guard let settingURL = URL(string: UIApplication.openSettingsURLString) else {
+            return
+        }
+        
+        if UIApplication.shared.canOpenURL(settingURL){
+            
+            UIApplication.shared.open(settingURL, options: [:]) { success in
+                print("success :", success)
+            }
+        }
+    
+    }
+    
+    
 }

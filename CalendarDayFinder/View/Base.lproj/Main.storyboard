@@ -117,11 +117,15 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day Of The Week Inside Your finder" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tub-T1-hdT">
-                                <rect key="frame" x="83" y="267" width="209" height="65"/>
-                                <color key="backgroundColor" systemColor="separatorColor"/>
+                                <rect key="frame" x="115" y="267" width="144" height="56"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="8u4-Id-UMf"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="209" id="a7p-L6-hVK"/>
+                                    <constraint firstAttribute="height" constant="65" id="8u4-Id-UMf">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="56"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="209" id="a7p-L6-hVK">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="144"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -134,10 +138,12 @@
                                 <variation key="heightClass=regular-widthClass=regular" preservesSuperviewLayoutMargins="NO"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljc-i4-lJU">
-                                <rect key="frame" x="120" y="354" width="135" height="30"/>
+                                <rect key="frame" x="138" y="331" width="99" height="30"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="Cgi-lz-i5I"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="135" id="Cgi-lz-i5I">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="99"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="30" id="ks5-IA-QmZ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -158,37 +164,62 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tub-T1-hdT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="Bec-6Y-Ns5">
-                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="166"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="115"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
                             <constraint firstItem="4uV-dt-YdR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-88" id="L0B-AN-fuS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tub-T1-hdT" secondAttribute="trailing" constant="83" id="ObO-kt-Fsq">
-                                <variation key="heightClass=regular-widthClass=regular" constant="120"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="148"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="116"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
-                            <constraint firstItem="Ljc-i4-lJU" firstAttribute="top" secondItem="tub-T1-hdT" secondAttribute="bottom" constant="22" id="Ozs-rq-KCy"/>
+                            <constraint firstItem="Ljc-i4-lJU" firstAttribute="top" secondItem="tub-T1-hdT" secondAttribute="bottom" constant="22" id="Ozs-rq-KCy">
+                                <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="8"/>
+                            </constraint>
                             <constraint firstItem="tub-T1-hdT" firstAttribute="top" secondItem="xcd-yV-77q" secondAttribute="bottom" constant="8" symbolic="YES" id="Qtx-6X-Rbh"/>
                             <constraint firstItem="xcd-yV-77q" firstAttribute="top" secondItem="Gk4-rZ-gmP" secondAttribute="bottom" constant="21" id="WeW-NP-Nfc"/>
-                            <constraint firstItem="Gk4-rZ-gmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Wox-U5-O3G"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uV-dt-YdR" secondAttribute="trailing" id="X6H-tU-GtS"/>
-                            <constraint firstItem="Ljc-i4-lJU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Xdl-Qk-ocD">
+                            <constraint firstItem="Gk4-rZ-gmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Wox-U5-O3G">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcd-yV-77q" secondAttribute="trailing" constant="53" id="Yqx-fH-7ak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uV-dt-YdR" secondAttribute="trailing" id="X6H-tU-GtS"/>
+                            <constraint firstItem="Ljc-i4-lJU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Xdl-Qk-ocD">
+                                <variation key="heightClass=compact-widthClass=compact" constant="199"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="138"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xcd-yV-77q" secondAttribute="trailing" constant="53" id="Yqx-fH-7ak">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4uV-dt-YdR" secondAttribute="bottom" constant="-34" id="b3S-vr-eC9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gk4-rZ-gmP" secondAttribute="trailing" constant="73" id="htw-Qr-Ein"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gk4-rZ-gmP" secondAttribute="trailing" constant="73" id="htw-Qr-Ein">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="Gk4-rZ-gmP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="29" id="n3J-Zo-yxr"/>
-                            <constraint firstItem="xcd-yV-77q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="sni-OS-6zg"/>
+                            <constraint firstItem="xcd-yV-77q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="53" id="sni-OS-6zg">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstItem="4uV-dt-YdR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u7A-XD-CVH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ljc-i4-lJU" secondAttribute="trailing" constant="120" id="vlt-hw-aA8">
-                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="181"/>
+                                <variation key="heightClass=regular-widthClass=compact" constant="138"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Day Finder" id="Gm5-8t-j5u">
                         <barButtonItem key="leftBarButtonItem" image="info.circle.fill" catalog="system" id="fug-Kv-ohs">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="fmn-S0-8WZ" kind="push" id="H97-1Z-SvT"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="moon.circle.fill" catalog="system" id="Dg6-NN-XBL">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="3ga-jd-bBJ" kind="presentation" id="e0c-6J-Ymt"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -202,7 +233,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938.39999999999998" y="73.313343328335833"/>
+            <point key="canvasLocation" x="937.78110944527748" y="72.799999999999997"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="lcd-9b-crA">
+            <objects>
+                <viewController id="fmn-S0-8WZ" customClass="InfoViewController" customModule="CalendarDayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zyF-P7-zhr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tM8-d7-h0v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XdS-a5-wGw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D6h-y1-3Zh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="748"/>
+        </scene>
+        <!--Appearance View Controller-->
+        <scene sceneID="Ihz-wT-oil">
+            <objects>
+                <viewController id="3ga-jd-bBJ" customClass="AppearanceViewController" customModule="CalendarDayFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ae0-S7-moO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vzd-nn-r6p">
+                                <rect key="frame" x="292" y="60" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.65152329210000004" blue="0.69080883260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtenTapped:" destination="3ga-jd-bBJ" eventType="touchUpInside" id="2E4-GZ-Qas"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MwQ-4d-9D6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xZd-An-8Pe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1727" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GJt-aI-4Dv">
@@ -229,6 +309,9 @@
         <image name="night" width="750" height="1334"/>
         <systemColor name="quaternaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="separatorColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
